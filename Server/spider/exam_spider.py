@@ -61,13 +61,13 @@ class Exam(object):
 
 
 # 普通话考试测试
-test = Exam()
-testData = {
-    'name': '***REMOVED***',
-    'stuID': '',
-    'idCard': '***REMOVED***'
-}
-print(test.ch_test_query(testData))
+# test = Exam()
+# testData = {
+#     'name': '***REMOVED***',
+#     'stuID': '',
+#     'idCard': '***REMOVED***'
+# }
+# print(test.ch_test_query(testData))
 
 # #cet考试测试
 # test=EX()

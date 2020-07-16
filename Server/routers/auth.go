@@ -227,7 +227,7 @@ func Auth(w http.ResponseWriter, r *http.Request) {
 			}()
 		}
 	}
-	vUser.ProfilePic.String = ""
+	//vUser.ProfilePic.String = ""
 	logs.Info(vUser)
 	cookieStr, err := NewCookie(vUser.ID)
 	if err != nil {

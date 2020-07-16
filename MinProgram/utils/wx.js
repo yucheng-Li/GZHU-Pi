@@ -44,7 +44,7 @@ wx.$ajax = function (option) {
 
         // http响应错误
         if (res.statusCode >= 400) {
-          if (res.statusCode == 401) wx.removeStorageSync('gzhupi_cookie')
+          // if (res.statusCode == 401) wx.removeStorageSync('gzhupi_cookie')
           let msg = res.data.error
           msg = msg ? msg : res.errMsg
           msg = String(res.statusCode) + " 错误"
@@ -69,7 +69,7 @@ wx.$ajax = function (option) {
 
         // 自定义响应协议(只返回data)
         if (res.data && res.data.status) {
-          if (res.data.status == 401) wx.removeStorageSync('gzhupi_cookie')
+          // if (res.data.status == 401) wx.removeStorageSync('gzhupi_cookie')
           if (res.data.status == 0 || res.data.status == 200) {
             resolve(res.data)
             return

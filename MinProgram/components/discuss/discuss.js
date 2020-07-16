@@ -22,6 +22,7 @@ Component({
     content: "",
     authorized: true,
     debounce: false,
+    anonymous_pic: "https://shaw-1256261760.cos.ap-guangzhou.myqcloud.com/gzhu-pi/images/icon/anonmous_avatar.png"
   },
 
   lifetimes: {
@@ -70,6 +71,17 @@ Component({
       this.setData({
         anonymous: e.detail.value
       })
+
+      if (e.detail.value) {
+        let profile_pic = wx.getStorageSync('gzhupi_user').profile_pic
+
+        if (typeof (profile_pic) == "string" && profile_pic != "") {
+          this.setData({
+            anonymous_pic: profile_pic
+          })
+        }
+      }
+
       wx.BaaS.auth.getCurrentUser().then(user => {
         console.log("user", user)
         // if (user.gender == 0) this.data.placeholder = "匿名童鞋"
@@ -108,7 +120,7 @@ Component({
 
     // 违规检测
     async checkComment() {
-      if (await wx.$checkText(this.data.content+this.data.anonymity)) {
+      if (await wx.$checkText(this.data.content + this.data.anonymity)) {
         return
       }
       this.addComment()

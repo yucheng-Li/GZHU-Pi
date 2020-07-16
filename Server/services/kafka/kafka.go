@@ -165,7 +165,7 @@ func (k *Kafka) consume() {
 			}
 
 			var pc sarama.PartitionConsumer
-			pc, err := k.consumer.ConsumePartition(h.Topic, h.Partition, sarama.OffsetNewest)
+			pc, err := k.consumer.ConsumePartition(h.Topic, h.Partition, h.Offset)
 			if err != nil {
 				if strings.Contains(err.Error(), "outside") {
 					pc, err = k.consumer.ConsumePartition(h.Topic, h.Partition, sarama.OffsetNewest)

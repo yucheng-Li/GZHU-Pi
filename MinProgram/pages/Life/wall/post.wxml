@@ -48,7 +48,7 @@
 		<!-- 匿名 -->
 		<view class="flex justify-between">
 			<view>
-				<text class="cuIcon-titles text-orange"></text>匿名</view>
+				<text class="cuIcon-titles text-orange"></text>自定义</view>
 			<switch class='sm' checked='{{anonymous}}' bindchange='anonymousSwitch'></switch>
 		</view>
 		<view wx:if="{{anonymous}}" class="margin-tb flex align-center animation-slide-top">

@@ -36,9 +36,9 @@ Page({
         }
       })
     } else {
-      // this.setData({
-      //   showAgree: true
-      // })
+      this.setData({
+        showAgree: true
+      })
       this.syncData()
       // this.setData({
       //   rank: wx.getStorageSync("rank")

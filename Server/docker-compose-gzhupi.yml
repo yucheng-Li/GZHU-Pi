@@ -1,3 +1,5 @@
+# k8s 部署： docker stack deploy --orchestrator=kubernetes -c docker-compose.yml gzhupi
+
 version: "3.6"
 
 networks:

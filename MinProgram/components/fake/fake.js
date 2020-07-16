@@ -11,13 +11,30 @@ Component({
       type: String,
       value: "default"
     }
-
   },
 
 
   data: {
 
     article: [{
+      src: "https://mp.weixin.qq.com/s/NbVEBpvlPgpfbAf_tRh09w",
+      cover: "http://mmbiz.qpic.cn/mmbiz_jpg/9fnicKncw0JOVm4Hr406Gr7T02StQMUA9kZx9oWYFVSozzaF23NAicsF1p98vlExkvHtEK2qewkYoTGTg8h9XLyA/0?wx_fmt=jpeg",
+      desc: "官方发布！2020广东省考公告出了！",
+      title: "考公公告",
+      date: "2020年6月30日"
+    }, {
+      src: "https://mp.weixin.qq.com/s/NbVEBpvlPgpfbAf_tRh09w",
+      cover: "http://mmbiz.qpic.cn/mmbiz_jpg/8lXpZIo3iayib0hArxnSRm69RtAbOvF5VyDw4x8xLicE5KgJnlKeibCgwKuXricAUV37ctEhgwJ5DeKfdMf6Q6elTAA/0?wx_fmt=jpeg",
+      desc: "Summer Intern：我的艰难求职路",
+      title: "求职分享",
+      date: "2020年06月10日"
+    }, {
+      src: "https://mp.weixin.qq.com/s/NbVEBpvlPgpfbAf_tRh09w",
+      cover: "http://mmbiz.qpic.cn/mmbiz_jpg/9fnicKncw0JO9Pkyn7ScdYWZ4kEL1ibGGFbwu3so7yZIQAXyxb5ibRKZhnuIfWtibYffFwSfwGnMTrL6TKRC0AuEHA/0?wx_fmt=jpeg",
+      desc: "暑期志愿者招募，免费义工旅行机会等你来领",
+      title: "志愿活动",
+      date: "2020年06月08日"
+    }, {
       src: "https://mp.weixin.qq.com/s/NbVEBpvlPgpfbAf_tRh09w",
       cover: "http://mmbiz.qpic.cn/mmbiz_jpg/9fnicKncw0JPibAPOAA1f5a7kDJ0B5GC6KeurCE4F1WZ32jhS7G2FfqKsfvy586chnSfL8pPNVTD6SZXlSIas3Ow/0?wx_fmt=jpeg",
       desc: "新功能上线！知道你与毕业的距离有多远吗？",

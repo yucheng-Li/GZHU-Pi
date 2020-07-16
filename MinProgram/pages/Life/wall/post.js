@@ -301,6 +301,14 @@ Page({
     this.setData({
       anonymous: e.detail.value
     })
+    if (e.detail.value) {
+      let profile_pic = wx.getStorageSync('gzhupi_user').profile_pic
+      if (typeof (profile_pic) == "string" && profile_pic != "") {
+        this.setData({
+          avatar: profile_pic
+        })
+      }
+    }
   },
   tapMore() {
     this.setData({
